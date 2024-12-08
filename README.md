@@ -22,3 +22,28 @@ Local Search found. Why is this?
 
 Add the code to run your experiments, graphs, and an explanation of what you did
 to this markdown file.
+
+# Answer
+
+### Held-Karp Tours & Times
+<img src="hk.png" alt="Held-Karp Table" width="400">
+
+**Note:** Ran for about 5 hours on matrix size 20.
+
+### Local Search Tours & Times
+<img src="ls.png" alt="Local Search Table" width="400">
+
+**Note:** Matrix size of 1500 finished in 12 minutes, so I scaled up accordingly.
+
+### Completion Times Graphed for Held-Karp and Local Search
+<img src="tspComp.png" alt="Completed TSP Line Graph" width="500">
+
+### Final Analysis
+
+Held-Karp always has a shorter tour the Local Search because Held-Karp finds the best solution possible. That is also why Held-Karp can only *(reasonably)* calculate up to a 19x19 matrix without becoming pretty much computationally impossible because it has a time complexity of $O(n^2 \cdot 2^n)$. While Local Search will not find the best solution every time, it finds a reasonably acceptable solution in a much shorter timeframe. Local Search starts with an initial tour and attempts to iteratively improve it.
+
+What does this mean? Local Search should be used as a solution to get a quick answer. Held-Karp is good for extreme accuracy (in smaller datasets). It is a matter of tradeoffs, and what kind of situation you will be implementing the algorithms in.
+
+For each matrix size, I benchmarked Held-Karp and Local Search on the same exact matrix in the interest of accurate data.
+
+ChatGPT was used to create generateDistanceMatrix().
