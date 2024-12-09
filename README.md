@@ -38,6 +38,8 @@ to this markdown file.
 
 **Note:** For the larger inputs runs of Local Search, I started with a 50x50 input, and incremented the size by 50 each time. The stopping number was 5000. I finished a 2700x2700 matrix in 41 minutes. The algorithm was running for just under 7 hours on my machine.
 
+(I have logs for each run at each input size increment of 50, did not put them all in this figure above.)
+
 ### Completion Times Graphed for Held-Karp and Local Search
 <img src="tspComp.png" alt="Completed TSP Line Graph" width="500">
 
