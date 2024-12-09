@@ -33,7 +33,10 @@ to this markdown file.
 ### Local Search Tours & Times
 <img src="ls.png" alt="Local Search Table" width="400">
 
-**Note:** Matrix size of 1500 finished in 12 minutes, so I scaled up accordingly.
+### Local Search Larger Input Runs 
+<img src="lsexpanded.png" alt="Local Search Table" width="400">
+
+**Note:** For the larger inputs runs of Local Search, I started with a 50x50 input, and incremented the size by 50 each time. The stopping number was 5000. I finished a 2700x2700 matrix in 41 minutes. The algorithm was running for just under 7 hours on my machine.
 
 ### Completion Times Graphed for Held-Karp and Local Search
 <img src="tspComp.png" alt="Completed TSP Line Graph" width="500">
